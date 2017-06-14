@@ -28,6 +28,8 @@ name (nameArg): Name of lifepath. String.
 
 setting (settingArg): Setting of lifepath. String.
 
+time (timeArg): Time it takes to complete this lifepath. Number
+
 leadsTo (LeadsToArg): What settings you can move to after this lifepath. (You can stick with current setting.) Array of Strings.
 
 requires (requiresArg): Requirements needed to take this lifepath. Array of Objects otherwise. 
@@ -39,6 +41,6 @@ Can be "Any" (>1), "Born" (first level), number (greater than or equal to that n
 has (hasArg): Array of attributes needed for has requierments. Array of Strings.
 */
 
-var addLife = function(raceArg, nameArg, settingArg, leadsToArg, requiresArg, restrictionsArg, hasArg){
-	raceArg.push({name:nameArg, setting:settingArg, leadsTo:leadsToArg, requires:requiresArg, restrictions:restrictionsArg, has:hasArg})
+var addLife = function(raceArg, nameArg, settingArg, timeArg, leadsToArg, requiresArg, restrictionsArg, hasArg){
+	raceArg.push({name:nameArg, setting:settingArg, time:timeArg, leadsTo:leadsToArg, requires:requiresArg, restrictions:restrictionsArg, has:hasArg})
 }
