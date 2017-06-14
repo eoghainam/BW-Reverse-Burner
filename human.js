@@ -39,4 +39,4 @@ addLife(human, "Irinerant Preist", "Peasant", 6, ["Villager", "Outcast", "City",
 
 addLife(human, "Recluse Wizard", "Peasant", 15, ["Outcast", "Villager", "City", "Court"], [{has: "Sorcery"], "All", []);
 
-addLife(human, "Country Wife", "Peasant", 10, ["REligious"], [{misc: "husband"], "All", []);
+addLife(human, "Country Wife", "Peasant", 10, ["Religious"], [{misc: "husband"], "All", ["Female"]);
